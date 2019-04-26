@@ -3,38 +3,120 @@
     {
       "id": 1,
       "firstname": "Frédéric",
-      "name": "Sananes",
+      "lastname": "Sananes",
       "isAdmin": true
     },
     {
       "id": 2,
       "firstname": "Dwain",
-      "name": "Johnson",
+      "lastname": "Johnson",
       "isAdmin": false
     },
     {
       "id": 3,
       "firstname": "Bruce",
-      "name": "Willis",
+      "lastname": "Willis",
       "isAdmin": false
     },
     {
       "id": 4,
       "firstname": "Chuck",
-      "name": "Norris",
+      "lastname": "Norris",
       "isAdmin": false
     },
     {
       "id": 5,
       "firstname": "John",
-      "name": "Cena",
+      "lastname": "Cena",
       "isAdmin": false
     },
     {
       "id": 6,
       "firstname": "Robert",
-      "name": "De Niro",
+      "lastname": "De Niro",
       "isAdmin": false
+    }
+  ],
+  "musics": [
+    {
+      "id": 1,
+      "title": "on s'attache",
+      "artist": "Cristophe Mae",
+      "duration": "3:09",
+      "plateform": "youtube",
+      "link": "https://youtu.be/rjsG_WGzgTA"
+    },
+    {
+      "id": 2,
+      "title": "Despacito",
+      "artist": "Luis Fonsi",
+      "featuring": "Daddy Yankee",
+      "duration": "4:41",
+      "plateform": "youtube",
+      "link": "https://youtu.be/kJQP7kiw5Fk"
+    },
+    {
+      "id": 3,
+      "title": "GANGNAM STYLE",
+      "artist": "Psy",
+      "duration": "4:12",
+      "plateform": "youtube",
+      "link": "https://youtu.be/9bZkp7q19f0"
+    },
+    {
+      "id": 4,
+      "title": "Mauvaise Foi nocturne",
+      "artist": "Fatal Bazooka",
+      "featuring": "Vitoo",
+      "duration": "6:29",
+      "plateform": "youtube",
+      "link": "https://youtu.be/x-biTuOrYkk"
+    },
+    {
+      "id": 5,
+      "title": "Boom, Boom, Boom, Boom!!",
+      "artist": "Vengaboys",
+      "duration": "3:36",
+      "plateform": "youtube",
+      "link": "https://youtu.be/xMP-JqFQ_l4"
+    },
+    {
+      "id": 6,
+      "title": "Barbie Girl",
+      "artist": "Aqua",
+      "duration": "3:21",
+      "plateform": "youtube",
+      "link": "https://youtu.be/ZyhrYis509A"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Variété Française"
+    },
+    {
+      "id": 2,
+      "name": "Hip-Hop"
+    },
+    {
+      "id": 3,
+      "name": "Rap FR"
+    },
+    {
+      "id": 4,
+      "name": "House"
+    },
+    {
+      "id": 5,
+      "name": "Pop"
+    },
+    {
+      "id": 6,
+      "name": "Rock"
+    },
+    {
+      "id": 7,
+      "name": "Latino"
     }
   ]
 }

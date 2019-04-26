@@ -8,6 +8,10 @@ const routes: Routes = [
         path: 'admin',
         component: AdminHomeComponent,
         canActivate: [AuthGuard]
+    },
+    {
+        path: 'admin/:firstname/:lastname',
+        component: AdminHomeComponent,
     }
 ];
 

@@ -1,17 +1,21 @@
 import { Injectable } from '@angular/core';
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {ActivatedRoute} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private activatedRoute: ActivatedRoute) { }
 
   isUserAuthenticated() {
     return new Observable<boolean> ((observer) => {
-      observer.next(true);
+      if (this.activatedRoute.snapshot.paramMap.get('isAdmin') === 'true') {
+        console.log()
+        observer.next(true);
+      }
     });
   }
 
