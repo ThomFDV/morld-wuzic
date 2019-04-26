@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Frédéric",
+      "name": "Sananes",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "firstname": "Dwain",
+      "name": "Johnson",
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "firstname": "Bruce",
+      "name": "Willis",
+      "isAdmin": false
+    },
+    {
+      "id": 4,
+      "firstname": "Chuck",
+      "name": "Norris",
+      "isAdmin": false
+    },
+    {
+      "id": 5,
+      "firstname": "John",
+      "name": "Cena",
+      "isAdmin": false
+    },
+    {
+      "id": 6,
+      "firstname": "Robert",
+      "name": "De Niro",
+      "isAdmin": false
+    }
+  ]
+}
