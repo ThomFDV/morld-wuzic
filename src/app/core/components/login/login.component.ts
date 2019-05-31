@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {AuthService} from "../../services/auth/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -12,7 +14,9 @@ export class LoginComponent implements OnInit {
 
   connexionForm: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+              private authService: AuthService,
+              private router: Router) { }
 
   ngOnInit() {
     this.connexionForm = this.fb.group({
@@ -25,12 +29,14 @@ export class LoginComponent implements OnInit {
     if (this.connexionForm.invalid) {
       return;
     }
-    console.log(this.connexionForm.controls.username.value);
+
+    this.authService.isUserAuthenticated(this.connexionForm.value.username, this.connexionForm.value.password).subscribe(result => {
+      this.router.navigateByUrl('/account');
+    });
   }
 
   getErrorMessage() {
-    return this.connexionForm.controls.username.hasError('required') ? 'You must enter a value' :
-            '';
+    return this.connexionForm.controls.username.hasError('required') ? 'You must enter a value' : '';
   }
 
 }
