@@ -1,4 +1,4 @@
-<section class="container-fluid">
+<section class="container-fluid mt-5">
   <mat-card class="m-auto col-6">
     <mat-card-header>
       <mat-card-title>Login Form</mat-card-title>
@@ -15,7 +15,7 @@
         </button>
         <mat-error *ngIf="connexionForm.controls.password.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
-      <button mat-raised-button color="primary">Se connecter</button>
+      <button mat-raised-button color="primary" class="col-4 m-auto">Se connecter</button>
     </form>
   </mat-card>
 </section>
