@@ -3,7 +3,7 @@
     <mat-card-header>
       <mat-card-title>Login Form</mat-card-title>
     </mat-card-header>
-    <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+    <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()" class="d-flex flex-column mb-3">
       <mat-form-field>
         <input matInput placeholder="Enter your username" formControlName="username" required>
         <mat-error *ngIf="connexionForm.controls.username.invalid">{{getErrorMessage()}}</mat-error>
@@ -17,5 +17,10 @@
       </mat-form-field>
       <button mat-raised-button color="warn" class="col-4 m-auto">Se connecter</button>
     </form>
+    <mat-divider></mat-divider>
+    <div class="d-flex flex-column pt-3">
+      <p class="text-muted small">Pas encore inscrit ? Cliquez sur le bouton ci-dessous pour le faire immédiatement !</p>
+      <button mat-raised-button color="primary" class="col-4 m-auto" routerLink="/register">S'inscrire</button>
+    </div>
   </mat-card>
 </section>

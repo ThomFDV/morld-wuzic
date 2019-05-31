@@ -1,0 +1,33 @@
+<section class="container-fluid mt-5">
+  <mat-card class="m-auto col-md-8 col-lg-6">
+    <mat-card-header>
+      <mat-card-title>Formulaire d'inscription</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+      <mat-form-field>
+        <input matInput placeholder="Enter your lastname" formControlName="lastname" required>
+        <mat-error *ngIf="registerForm.controls.lastname.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter your firstname" formControlName="firstname" required>
+        <mat-error *ngIf="registerForm.controls.firstname.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter your email" formControlName="email" required>
+        <mat-error *ngIf="registerForm.controls.email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter your username" formControlName="username" required>
+        <mat-error *ngIf="registerForm.controls.username.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="registerForm.controls.password.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="warn" class="col-4 m-auto">Se connecter</button>
+    </form>
+  </mat-card>
+</section>

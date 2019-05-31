@@ -2,39 +2,43 @@
   "users": [
     {
       "id": 1,
-      "firstname": "Frédéric",
       "lastname": "Sananes",
-      "isAdmin": true
+      "firstname": "Frédéric",
+      "username": "Fredou",
+      "email": "toto@toto.toto",
+      "password": "angular-music"
     },
     {
       "id": 2,
-      "firstname": "Dwain",
       "lastname": "Johnson",
-      "isAdmin": false
+      "firstname": "Dwain",
+      "username": "Rock",
+      "email": "toto@toto.toto",
+      "password": "angular-music"
     },
     {
       "id": 3,
-      "firstname": "Bruce",
       "lastname": "Willis",
-      "isAdmin": false
+      "firstname": "Bruce",
+      "username": "Fredou",
+      "email": "toto@toto.toto",
+      "password": "angular-music"
     },
     {
-      "id": 4,
-      "firstname": "Chuck",
-      "lastname": "Norris",
-      "isAdmin": false
+      "lastname": "toto",
+      "firstname": "tata",
+      "email": "toto@toto.toto",
+      "username": "tototata",
+      "password": "toto@toto",
+      "id": 4
     },
     {
-      "id": 5,
-      "firstname": "John",
-      "lastname": "Cena",
-      "isAdmin": false
-    },
-    {
-      "id": 6,
-      "firstname": "Robert",
-      "lastname": "De Niro",
-      "isAdmin": false
+      "lastname": "titi",
+      "firstname": "tutu",
+      "email": "titi@tutu.fr",
+      "username": "tititutu",
+      "password": "ceciestuntestquetouslemondedescende",
+      "id": 5
     }
   ],
   "musics": [
