@@ -8,6 +8,8 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
 
+  hide = true;
+
   connexionForm: FormGroup;
 
   constructor(private fb: FormBuilder) { }
