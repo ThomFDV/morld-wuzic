@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CoreModule} from "./core/core.module";
 import {AdminModule} from "./admin/admin.module";
+import {MatIconModule, MatToolbarModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import {AdminModule} from "./admin/admin.module";
     CoreModule,
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

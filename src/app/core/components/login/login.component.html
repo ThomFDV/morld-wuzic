@@ -1,3 +1,7 @@
-<p>
-  login works!
-</p>
+<section>
+  <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="username" formControlName="username">
+    <input type="password" placeholder="password" formControlName="password">
+    <button mat-raised-button color="primary">Se connecter</button>
+  </form>
+</section>
