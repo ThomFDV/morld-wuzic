@@ -6,7 +6,7 @@ import {RouterModule} from "@angular/router";
 import { LoginComponent } from './components/login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatIconModule, MatInputModule} from "@angular/material";
+import {MatButtonModule, MatCardModule, MatIconModule, MatInputModule} from "@angular/material";
 
 @NgModule({
   declarations: [ HomeComponent, NotFoundComponentComponent, LoginComponent],
@@ -18,7 +18,8 @@ import {MatButtonModule, MatIconModule, MatInputModule} from "@angular/material"
     MatButtonModule,
     MatInputModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ]
 })
 export class CoreModule { }

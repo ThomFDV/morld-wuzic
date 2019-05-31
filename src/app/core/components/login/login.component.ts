@@ -28,4 +28,9 @@ export class LoginComponent implements OnInit {
     console.log(this.connexionForm.controls.username.value);
   }
 
+  getErrorMessage() {
+    return this.connexionForm.controls.username.hasError('required') ? 'You must enter a value' :
+            '';
+  }
+
 }
