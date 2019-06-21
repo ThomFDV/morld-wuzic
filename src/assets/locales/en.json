@@ -1,0 +1,21 @@
+{
+  "HOME": {
+    "HELLO": "Hello",
+    "WELCOME": "Welcome on Morld Wusic !",
+    "SUBTITLE": "The musical quiz where you can play with your friends !",
+    "QUESTION": "Play a quiz ?",
+    "BUTTON": "Let's go !"
+  },
+  "APP": {
+    "HOME": "Home",
+    "LOGIN": "Login"
+  },
+  "GAME": {
+    "QUESTION": "Which artist made",
+    "NEXT": "Next",
+    "SCORE": "Show the score"
+  },
+  "SCORE": {
+    "TITLE": "The scores"
+  }
+}
