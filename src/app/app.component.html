@@ -1,10 +1,15 @@
 <mat-toolbar color="warn">
     <mat-toolbar-row>
-      <button mat-button routerLink="/"><h2>Morld Wuzic</h2></button>
+        <button mat-button routerLink="/"><h2>Morld Wuzic</h2></button>
         <mat-icon aria-hidden="false" aria-label="Example heart icon" class="ml-2">favorite</mat-icon>
         <span class="example-fill-remaining-space"></span>
         <button mat-button routerLink="/">{{'APP.HOME' | translate}}</button>
         <button mat-button routerLink="/login">{{'APP.LOGIN' | translate}}</button>
+        <button mat-button [matMenuTriggerFor]="menu">{{'APP.LANG' | translate}}</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="changeLang('fr')">Français</button>
+          <button mat-menu-item (click)="changeLang('en')">English</button>
+        </mat-menu>
     </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>

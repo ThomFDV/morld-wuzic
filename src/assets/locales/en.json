@@ -8,7 +8,12 @@
   },
   "APP": {
     "HOME": "Home",
+<<<<<<< HEAD
     "LOGIN": "Login"
+=======
+    "LOGIN": "Login",
+    "LANG": "English"
+>>>>>>> 9fa2019095e5ff5c1e05e70a8077b1025d6fa0b6
   },
   "GAME": {
     "QUESTION": "Which artist made",
