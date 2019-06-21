@@ -4,7 +4,7 @@
       <form [formGroup]="answers0" (ngSubmit)="isCorrect0()">
         <div class="col-6 mx-auto mt-5">
           <mat-card>
-            <mat-card-title>Which artist made {{quiz[0].title}}?</mat-card-title>
+            <mat-card-title>{{'GAME.QUESTION' | translate}} {{quiz[0].title}}?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer0">
                 <mat-radio-button value="{{quiz[0].option0}}" class="order-4">
@@ -20,14 +20,14 @@
                   {{quiz[0].option3}}
                 </mat-radio-button>
               </mat-radio-group>
-              <button mat-raised-button color="primary" type="submit" matStepperNext>Next</button>
+              <button mat-raised-button color="primary" type="submit" matStepperNext>{{'GAME.NEXT' | translate}}</button>
             </mat-card-content>
           </mat-card>
         </div>
       </form>
     </mat-step>
     <mat-step class="col-6 mx-auto mt-5">
-      <button mat-raised-button color="warn" routerLink="/score">Fini !</button>
+      <button mat-raised-button color="warn" routerLink="/score">{{'GAME.SCORE' | translate}}</button>
     </mat-step>
   </mat-horizontal-stepper>
 </section>

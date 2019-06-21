@@ -1,0 +1,21 @@
+{
+  "HOME": {
+    "HELLO": "Bonjour",
+    "WELCOME": "Bienvenue sur Morld Wusic !",
+    "SUBTITLE": "Le quiz musical qui te permet de jouer avec tes amis !",
+    "QUESTION": "Faire un quiz ?",
+    "BUTTON": "C'est parti !"
+  },
+  "APP": {
+    "HOME": "Accueil",
+    "LOGIN": "Connexion"
+  },
+  "GAME": {
+    "QUESTION": "Quel artiste a chanté",
+    "NEXT": "Suivant",
+    "SCORE": "Voir les scores"
+  },
+  "SCORE": {
+    "TITLE": "Les scores"
+  }
+}
