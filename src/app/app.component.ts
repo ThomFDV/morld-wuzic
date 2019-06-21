@@ -9,8 +9,12 @@ import {TranslateService} from '@ngx-translate/core';
 
 export class AppComponent {
   title = 'projet-morld-wusic';
-  constructor(translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     translate.setDefaultLang('fr');
-    translate.use('fr');
+    translate.use(localStorage.getItem('lang') || 'fr');
+  }
+  changeLang(lang: string) {
+    localStorage.setItem('lang', lang);
+    this.translate.use(lang);
   }
 }

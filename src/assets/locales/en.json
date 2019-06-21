@@ -8,7 +8,8 @@
   },
   "APP": {
     "HOME": "Home",
-    "LOGIN": "Login"
+    "LOGIN": "Login",
+    "LANG": "English"
   },
   "GAME": {
     "QUESTION": "Which artist made",
