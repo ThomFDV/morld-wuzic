@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
     }
 
     this.authService.register(this.registerForm.value).subscribe(result => {
-      alert("Bien enregisté ! Veuillez maintenant vous connecter.")
+      alert("Bien enregisté ! Veuillez maintenant vous connecter.");
       this.router.navigateByUrl('/login');
     });
   }

@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.connexionForm = this.fb.group({
       username: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      password: ['', [Validators.required, Validators.minLength(3)]]
     });
   }
 
@@ -30,8 +30,9 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    this.authService.isUserAuthenticated(this.connexionForm.value.username, this.connexionForm.value.password).subscribe(result => {
-      this.router.navigateByUrl('/account');
+    this.authService.isUserAuthenticated(this.connexionForm.controls.username.value, this.connexionForm.controls.password.value).subscribe(() => {
+      alert("Bien connecté");
+      this.router.navigateByUrl('');
     });
   }
 

@@ -17,6 +17,7 @@ export class AuthService {
   isUserAuthenticated(username: string, password: string): Observable<boolean> {
     let isLoggedIn = false;
     if (username === 'admin' && password === 'admin') {
+      console.log("good values");
       this.currentUser = {
         id: 1,
         lastname : 'admin',
@@ -34,7 +35,6 @@ export class AuthService {
   }
 
   register(user : Users) {
-    alert("arrived here");
     return this.http.post('http://localhost:3000/users', user);
   }
 }
