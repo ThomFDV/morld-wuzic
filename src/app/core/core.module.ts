@@ -6,11 +6,20 @@ import {RouterModule} from "@angular/router";
 import { LoginComponent } from './components/login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCardModule, MatDividerModule, MatIconModule, MatInputModule} from "@angular/material";
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatDividerModule,
+  MatIconModule,
+  MatInputModule, MatRadioModule,
+  MatStepperModule
+} from "@angular/material";
 import { RegisterComponent } from './components/register/register.component';
+import {GameComponent} from "./components/game/game.component";
+import {ScoreComponent} from "./components/score/score.component";
 
 @NgModule({
-  declarations: [ HomeComponent, NotFoundComponentComponent, LoginComponent, RegisterComponent],
+  declarations: [ HomeComponent, NotFoundComponentComponent, LoginComponent, RegisterComponent, GameComponent, ScoreComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -21,7 +30,9 @@ import { RegisterComponent } from './components/register/register.component';
     MatIconModule,
     FormsModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatStepperModule,
+    MatRadioModule
   ]
 })
 export class CoreModule { }

@@ -1,0 +1,33 @@
+<section class="container-fluid">
+  <mat-horizontal-stepper #stepper>
+    <mat-step>
+      <form [formGroup]="answers0" (ngSubmit)="isCorrect0()">
+        <div class="col-6 mx-auto mt-5">
+          <mat-card>
+            <mat-card-title>Which artist made {{quiz[0].title}}?</mat-card-title>
+            <mat-card-content>
+              <mat-radio-group class="d-flex flex-column" formControlName="answer0">
+                <mat-radio-button value="{{quiz[0].option0}}" class="order-4">
+                  {{quiz[0].option0}}
+                </mat-radio-button>
+                <mat-radio-button value="{{quiz[0].option1}}" class="order-1">
+                  {{quiz[0].option1}}
+                </mat-radio-button>
+                <mat-radio-button value="{{quiz[0].option2}}" class="order-2">
+                  {{quiz[0].option2}}
+                </mat-radio-button>
+                <mat-radio-button value="{{quiz[0].option3}}" class="order-3">
+                  {{quiz[0].option3}}
+                </mat-radio-button>
+              </mat-radio-group>
+              <button mat-raised-button color="primary" type="submit" matStepperNext>Next</button>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step class="col-6 mx-auto mt-5">
+      <button mat-raised-button color="warn" routerLink="/score">Fini !</button>
+    </mat-step>
+  </mat-horizontal-stepper>
+</section>
