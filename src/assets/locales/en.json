@@ -1,0 +1,26 @@
+{
+  "HOME": {
+    "HELLO": "Hello",
+    "WELCOME": "Welcome on Morld Wusic !",
+    "SUBTITLE": "The musical quiz where you can play with your friends !",
+    "QUESTION": "Play a quiz ?",
+    "BUTTON": "Let's go !"
+  },
+  "APP": {
+    "HOME": "Home",
+<<<<<<< HEAD
+    "LOGIN": "Login"
+=======
+    "LOGIN": "Login",
+    "LANG": "English"
+>>>>>>> 9fa2019095e5ff5c1e05e70a8077b1025d6fa0b6
+  },
+  "GAME": {
+    "QUESTION": "Which artist made",
+    "NEXT": "Next",
+    "SCORE": "Show the score"
+  },
+  "SCORE": {
+    "TITLE": "The scores"
+  }
+}
