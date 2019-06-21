@@ -7,12 +7,17 @@ import {LoginComponent} from "./core/components/login/login.component";
 import {RegisterComponent} from "./core/components/register/register.component";
 import {GameComponent} from "./core/components/game/game.component";
 import {ScoreComponent} from "./core/components/score/score.component";
+import {PlayersComponent} from "./core/components/players/players.component";
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'players',
+    component: PlayersComponent
   },
   {
     path: 'game',

@@ -18,5 +18,13 @@
   },
   "SCORE": {
     "TITLE": "Les scores"
+  },
+  "PLAYERS": {
+    "TITLE": "Veuillez entrer les noms des joueurs",
+    "BUTTON": "Jouer !",
+    "PLAYER1": "Entrez le nom du premier joueur",
+    "PLAYER2": "Entrez le nom du second joueur",
+    "PLAYER3": "Entrez le nom du troisième joueur",
+    "PLAYER4": "Entrez le nom du dernier joueur"
   }
 }

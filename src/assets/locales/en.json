@@ -18,5 +18,13 @@
   },
   "SCORE": {
     "TITLE": "The scores"
+  },
+  "PLAYERS": {
+    "TITLE": "May you please enter the players' name",
+    "BUTTON": "Play !",
+    "PLAYER1": "Entrer the name of the first player",
+    "PLAYER2": "Entrer the name of the second player",
+    "PLAYER3": "Entrer the name of the third player",
+    "PLAYER4": "Entrer the name of the last player"
   }
 }

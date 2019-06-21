@@ -18,9 +18,10 @@ import { RegisterComponent } from './components/register/register.component';
 import {GameComponent} from './components/game/game.component';
 import {ScoreComponent} from './components/score/score.component';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
+import { PlayersComponent } from './components/players/players.component';
 
 @NgModule({
-  declarations: [ HomeComponent, NotFoundComponentComponent, LoginComponent, RegisterComponent, GameComponent, ScoreComponent],
+  declarations: [ HomeComponent, NotFoundComponentComponent, LoginComponent, RegisterComponent, GameComponent, ScoreComponent, PlayersComponent],
   imports: [
     TranslateModule,
     CommonModule,

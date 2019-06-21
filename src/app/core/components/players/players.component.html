@@ -1,0 +1,24 @@
+<section class="container-fluid">
+  <mat-card class="col-6 mx-auto my-5">
+    <mat-card-title class="text-center">
+      <h3>{{'PLAYERS.TITLE' | translate}}</h3>
+    </mat-card-title>
+    <mat-card-content>
+      <form action="" [formGroup]="players" (ngSubmit)="onSubmit()" class="d-flex flex-column col-6 mx-auto">
+        <mat-form-field class="md-input-container">
+          <input matInput placeholder="{{'PLAYERS.PLAYER1' | translate}}" formControlName="player1" required>
+        </mat-form-field>
+        <mat-form-field class="md-input-container">
+          <input matInput placeholder="{{'PLAYERS.PLAYER2' | translate}}" formControlName="player2" required>
+        </mat-form-field>
+        <mat-form-field class="md-input-container">
+          <input matInput placeholder="{{'PLAYERS.PLAYER3' | translate}}" formControlName="player3" required>
+        </mat-form-field>
+        <mat-form-field class="md-input-container">
+          <input matInput placeholder="{{'PLAYERS.PLAYER4' | translate}}" formControlName="player4" required>
+        </mat-form-field>
+        <button mat-raised-button color="warn">{{'PLAYERS.BUTTON' | translate}}</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</section>
