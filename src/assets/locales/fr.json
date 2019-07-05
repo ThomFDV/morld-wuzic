@@ -18,5 +18,22 @@
   },
   "SCORE": {
     "TITLE": "Les scores"
+  },
+  "LOGIN": {
+    "TITLE": "Formulaire de connexion",
+    "USERNAME": "Saisir le nom d'utilisateur",
+    "PASSWORD": "Saisir le mot de passe",
+    "BUTTON_CONNECT": "Se connecter",
+    "BUTTON_REGISTER": "S'inscrire",
+    "SUBTITLE_REGISTER": "Pas encore inscrit ? Cliquez sur le bouton ci-dessous pour le faire immédiatement !"
+  },
+  "REGISTER": {
+    "TITLE": "Formulaire d'inscription",
+    "LASTNAME": "Saisir le nom",
+    "FIRSTNAME" : "Saisir le prénom",
+    "EMAIL": "Saisir le mail",
+    "USERNAME": "Saisir le nom d'utilisateur",
+    "PASSWORD": "Saisir le mot de passe",
+    "BUTTON_CONNECT": "Se connecter"
   }
 }

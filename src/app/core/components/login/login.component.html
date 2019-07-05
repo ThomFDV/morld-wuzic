@@ -1,26 +1,26 @@
 <section class="container-fluid mt-5">
   <mat-card class="m-auto col-md-8 col-lg-6">
     <mat-card-header>
-      <mat-card-title>Login Form</mat-card-title>
+      <mat-card-title>{{'LOGIN.TITLE' | translate}}</mat-card-title>
     </mat-card-header>
     <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()" class="d-flex flex-column mb-3">
       <mat-form-field class="md-input-container">
-        <input matInput placeholder="Enter your username" formControlName="username" required>
+        <input matInput placeholder="{{'LOGIN.USERNAME' | translate}}" formControlName="username" required>
         <mat-error *ngIf="connexionForm.controls.username.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+        <input matInput placeholder="{{'LOGIN.PASSWORD' | translate}}" [type]="hide ? 'password' : 'text'" formControlName="password" required>
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
         <mat-error *ngIf="connexionForm.controls.password.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
-      <button mat-raised-button color="warn" class="col-4 m-auto">Se connecter</button>
+      <button mat-raised-button color="warn" class="col-4 m-auto">{{'LOGIN.BUTTON_CONNECT' | translate}}</button>
     </form>
     <mat-divider></mat-divider>
     <div class="d-flex flex-column pt-3">
-      <p class="text-muted small">Pas encore inscrit ? Cliquez sur le bouton ci-dessous pour le faire immédiatement !</p>
-      <button mat-stroked-button color="warn" class="col-4 m-auto" routerLink="/register">S'inscrire</button>
+      <p class="text-muted small">{{'LOGIN.SUBTITLE_REGISTER' | translate}}</p>
+      <button mat-stroked-button color="warn" class="col-4 m-auto" routerLink="/register">{{'LOGIN.BUTTON_REGISTER' | translate}}</button>
     </div>
   </mat-card>
 </section>

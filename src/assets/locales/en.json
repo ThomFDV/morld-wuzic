@@ -18,5 +18,22 @@
   },
   "SCORE": {
     "TITLE": "The scores"
+  },
+  "LOGIN": {
+    "TITLE": "Login Form",
+    "USERNAME": "Enter your username",
+    "PASSWORD": "Enter your password",
+    "BUTTON_CONNECT": "Login",
+    "BUTTON_REGISTER": "Register",
+    "SUBTITLE_REGISTER": "Not already registered ? Click on the button bellow to do it immediately !"
+  },
+  "REGISTER": {
+    "TITLE": "Inscription Form",
+    "LASTNAME": "Enter your lastname",
+    "FIRSTNAME" : "Enter your firstname",
+    "EMAIL": "Enter your email",
+    "USERNAME": "Enter your username",
+    "PASSWORD": "Enter your password",
+    "BUTTON_CONNECT": "Login"
   }
 }
