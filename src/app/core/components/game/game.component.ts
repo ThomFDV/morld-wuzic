@@ -23,6 +23,7 @@ export class GameComponent implements OnInit {
   answers2: FormGroup;
   answers3: FormGroup;
   public goodAnswer = 0;
+  embedUrl: string;
 
   constructor(private formBuilder: FormBuilder,
               private gameService: GameService) {}
@@ -53,6 +54,7 @@ export class GameComponent implements OnInit {
   getQuiz(i) {
     this.gameService.getQuiz(this.quizId[i]).subscribe((res: Quiz) => {
       this.quiz.push(res);
+      this.embedUrl = "https://www.youtube.com/embed/9bZkp7q19f0?controls=0";
     });
   }
 

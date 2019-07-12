@@ -6,4 +6,5 @@ export class Quiz {
     option1: string;
     option2: string;
     option3: string;
+    embed: string;
 }

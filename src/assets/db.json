@@ -57,7 +57,8 @@
       "option0": "PSY",
       "option1": "Black Eyed Peas",
       "option2": "Garou",
-      "option3": "SYP"
+      "option3": "SYP",
+      "embed": "https://www.youtube.com/embed/9bZkp7q19f0?controls=0"
     },
     {
       "id": 2,
@@ -66,7 +67,8 @@
       "option0": "Luis Fonsi",
       "option1": "Fatal Bazooka",
       "option2": "Enrique Iglesias",
-      "option3": "Daddy Yankee"
+      "option3": "Daddy Yankee",
+      "embed": "https://www.youtube.com/embed/9bZkp7q19f0?controls=0"
     },
     {
       "id": 3,
@@ -75,7 +77,8 @@
       "option0": "Drake",
       "option1": "Eminem",
       "option2": "Franky Vincent",
-      "option3": "50 cents"
+      "option3": "50 cents",
+      "embed": "https://www.youtube.com/embed/9bZkp7q19f0?controls=0"
     },
     {
       "id": 4,
@@ -84,7 +87,8 @@
       "option0": "Rihanna",
       "option1": "Nolwenn Leroy",
       "option2": "Beyonce",
-      "option3": "Katie Pery"
+      "option3": "Katie Pery",
+      "embed": "https://www.youtube.com/embed/9bZkp7q19f0?controls=0"
     }
   ]
 }

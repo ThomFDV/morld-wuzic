@@ -26,7 +26,8 @@ export class PlayersComponent implements OnInit {
   }
 
   onSubmit() {
-
+    this.gameService.setPlayers(this.players.value);
+    alert(this.gameService.player1);
     this.router.navigateByUrl('/game');
   }
 

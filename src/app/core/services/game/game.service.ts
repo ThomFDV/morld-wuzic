@@ -7,10 +7,10 @@ import {HttpClient} from "@angular/common/http";
 export class GameService {
   url = 'http://localhost:3000/quiz';
   score: number;
-  player1 : string;
-  player2 : string;
-  player3 : string;
-  player4 : string;
+  player1: string;
+  player2: string;
+  player3: string;
+  player4: string;
 
   constructor(private http: HttpClient) { }
 
