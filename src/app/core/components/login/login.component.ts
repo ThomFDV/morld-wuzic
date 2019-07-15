@@ -30,10 +30,13 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    this.authService.isUserAuthenticated(this.connexionForm.controls.username.value, this.connexionForm.controls.password.value).subscribe(() => {
+    if (this.authService.isUserAuthenticated(this.connexionForm.controls.username.value,
+        this.connexionForm.controls.password.value)) {
       alert("Bien connecté");
       this.router.navigateByUrl('');
-    });
+    } else {
+      alert("Identifiants incorrects");
+    }
   }
 
   getErrorMessage() {
