@@ -1,0 +1,31 @@
+<section class="container-fluid mt-5">
+  <mat-card class="m-auto col-md-8 col-lg-6">
+    <mat-card-header>
+      <mat-card-title>Formulaire d'inscription</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="songCreationForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+      <mat-form-field>
+        <input matInput placeholder="Nom d'une chanson" formControlName="title" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Son artiste" formControlName="artist" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Bonne réponse" formControlName="option0" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mausaise réponse" formControlName="option1" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mausaise réponse" formControlName="option2" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mausaise réponse" formControlName="option3" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Url youtube embed" formControlName="embed" required>
+      </mat-form-field>
+      <button mat-raised-button color="warn" class="col-4 m-auto">Se connecter</button>
+    </form>
+  </mat-card>
+</section>

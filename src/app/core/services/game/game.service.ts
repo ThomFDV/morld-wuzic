@@ -25,6 +25,10 @@ export class GameService {
     return this.score;
   }
 
+  addSong(quiz) {
+    return this.http.post(this.url, quiz);
+  }
+
   setPlayers(players) {
     this.players.push(players.player1);
     this.players.push(players.player2);

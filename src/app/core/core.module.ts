@@ -20,6 +20,7 @@ import {ScoreComponent} from './components/score/score.component';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import { PlayersComponent } from './components/players/players.component';
 import {SafePipe} from "./pipe/safe.pipe";
+import { AddSongComponent } from './components/add-song/add-song.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {SafePipe} from "./pipe/safe.pipe";
       GameComponent,
       ScoreComponent,
       PlayersComponent,
-      SafePipe
+      SafePipe,
+      AddSongComponent
   ],
   imports: [
     TranslateModule,

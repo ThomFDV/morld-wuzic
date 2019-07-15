@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
   onSubmit() {
     if (this.registerForm.invalid) {
-      alert("Un problème est survenu lors de l'enregistrement")
+      alert("Un problème est survenu lors de l'enregistrement");
       return;
     }
 
