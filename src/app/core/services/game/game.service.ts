@@ -7,10 +7,7 @@ import {HttpClient} from "@angular/common/http";
 export class GameService {
   url = 'http://localhost:3000/quiz';
   score: number;
-  player1: string;
-  player2: string;
-  player3: string;
-  player4: string;
+  players = [];
 
   constructor(private http: HttpClient) { }
 
@@ -29,9 +26,9 @@ export class GameService {
   }
 
   setPlayers(players) {
-    this.player1 = players.player1;
-    this.player2 = players.player2;
-    this.player3 = players.player3;
-    this.player4 = players.player4;
+    this.players.push(players.player1);
+    this.players.push(players.player2);
+    this.players.push(players.player3);
+    this.players.push(players.player4);
   }
 }

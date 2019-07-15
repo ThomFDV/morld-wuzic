@@ -4,20 +4,23 @@
       <form [formGroup]="answers0" (ngSubmit)="isCorrect0()">
         <div class="col-6 mx-auto mt-5">
           <mat-card>
-            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <mat-card-title>{{'GAME.QUESTION' | translate}} {{quiz[0].title}}?</mat-card-title>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    width="40" height="40" type="text/html"
+                    [src]="quiz[0].embed | safe">
+            </iframe>
+            <mat-card-title>{{players[0]}} {{'GAME.QUESTION' | translate}} {{quiz[0].title}}?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer0">
-                <mat-radio-button value="{{quiz[0].option0}}" class="order-{{order1[0]}}">
+                <mat-radio-button value="{{quiz[0].option0}}" [ngClass]="'order-' + order1[0]">
                   {{quiz[0].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[0].option1}}" class="order-{{order1[1]}}">
+                <mat-radio-button value="{{quiz[0].option1}}" [ngClass]="'order-' + order1[1]">
                   {{quiz[0].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[0].option2}}" class="order-{{order1[2]}}">
+                <mat-radio-button value="{{quiz[0].option2}}" [ngClass]="'order-' + order1[2]">
                   {{quiz[0].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[0].option3}}" class="order-{{order1[3]}}">
+                <mat-radio-button value="{{quiz[0].option3}}" [ngClass]="'order-' + order1[3]">
                   {{quiz[0].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -31,19 +34,23 @@
       <form [formGroup]="answers1" (ngSubmit)="isCorrect1()">
         <div class="col-6 mx-auto mt-5">
           <mat-card>
-            <mat-card-title>{{'GAME.QUESTION' | translate}} {{quiz[1].title}}?</mat-card-title>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    width="40" height="40" type="text/html"
+                    [src]="quiz[0].embed | safe">
+            </iframe>
+            <mat-card-title>{{players[1]}} {{'GAME.QUESTION' | translate}} {{quiz[1].title}}?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer1">
-                <mat-radio-button value="{{quiz[1].option0}}" class="order-{{order2[0]}}">
+                <mat-radio-button value="{{quiz[1].option0}}" [ngClass]="'order-' + order2[0]">
                   {{quiz[1].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[1].option1}}" class="order-{{order2[1]}}">
+                <mat-radio-button value="{{quiz[1].option1}}" [ngClass]="'order-' + order2[1]">
                   {{quiz[1].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[1].option2}}" class="order-{{order2[2]}}">
+                <mat-radio-button value="{{quiz[1].option2}}" [ngClass]="'order-' + order2[2]">
                   {{quiz[1].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[1].option3}}" class="order-{{order2[3]}}">
+                <mat-radio-button value="{{quiz[1].option3}}" [ngClass]="'order-' + order2[3]">
                   {{quiz[1].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -57,19 +64,23 @@
       <form [formGroup]="answers2" (ngSubmit)="isCorrect2()">
         <div class="col-6 mx-auto mt-5">
           <mat-card>
-            <mat-card-title>{{'GAME.QUESTION' | translate}} {{quiz[2].title}}?</mat-card-title>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    width="40" height="40" type="text/html"
+                    [src]="quiz[0].embed | safe">
+            </iframe>
+            <mat-card-title>{{players[2]}} {{'GAME.QUESTION' | translate}} {{quiz[2].title}}?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer2">
-                <mat-radio-button value="{{quiz[2].option0}}" class="order-{{order3[0]}}">
+                <mat-radio-button value="{{quiz[2].option0}}" [ngClass]="'order-' + order3[0]">
                   {{quiz[2].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[2].option1}}" class="order-{{order3[1]}}">
+                <mat-radio-button value="{{quiz[2].option1}}" [ngClass]="'order-' + order3[1]">
                   {{quiz[2].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[2].option2}}" class="order-{{order3[2]}}">
+                <mat-radio-button value="{{quiz[2].option2}}" [ngClass]="'order-' + order3[2]">
                   {{quiz[2].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[2].option3}}" class="order-{{order3[3]}}">
+                <mat-radio-button value="{{quiz[2].option3}}" [ngClass]="'order-' + order3[3]">
                   {{quiz[2].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -83,19 +94,23 @@
       <form [formGroup]="answers3" (ngSubmit)="isCorrect3()">
         <div class="col-6 mx-auto mt-5">
           <mat-card>
-            <mat-card-title>{{'GAME.QUESTION' | translate}} {{quiz[3].title}}?</mat-card-title>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    width="40" height="40" type="text/html"
+                    [src]="quiz[0].embed | safe">
+            </iframe>
+            <mat-card-title>{{players[3]}} {{'GAME.QUESTION' | translate}} {{quiz[3].title}}?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer3">
-                <mat-radio-button value="{{quiz[3].option0}}" class="order-{{order4[0]}}">
+                <mat-radio-button value="{{quiz[3].option0}}" [ngClass]="'order-' + order4[0]">
                   {{quiz[3].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[3].option1}}" class="order-{{order4[1]}}">
+                <mat-radio-button value="{{quiz[3].option1}}" [ngClass]="'order-' + order4[1]">
                   {{quiz[3].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[3].option2}}" class="order-{{order4[2]}}">
+                <mat-radio-button value="{{quiz[3].option2}}" [ngClass]="'order-' + order4[2]">
                   {{quiz[3].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[3].option3}}" class="order-{{order4[3]}}">
+                <mat-radio-button value="{{quiz[3].option3}}" [ngClass]="'order-' + order4[3]">
                   {{quiz[3].option3}}
                 </mat-radio-button>
               </mat-radio-group>

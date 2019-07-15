@@ -18,18 +18,19 @@ export class GameComponent implements OnInit {
   private order4 = [];
   private answerNbr = 4;
   private quizNbr = 4;
+  players: any;
   answers0: FormGroup;
   answers1: FormGroup;
   answers2: FormGroup;
   answers3: FormGroup;
   public goodAnswer = 0;
-  embedUrl: string;
 
   constructor(private formBuilder: FormBuilder,
               private gameService: GameService) {}
 
   ngOnInit() {
     this.shuffle();
+    this.players = this.gameService.players;
     this.order1 = this.shuffleAnswers();
     this.order2 = this.shuffleAnswers();
     this.order3 = this.shuffleAnswers();
@@ -54,7 +55,6 @@ export class GameComponent implements OnInit {
   getQuiz(i) {
     this.gameService.getQuiz(this.quizId[i]).subscribe((res: Quiz) => {
       this.quiz.push(res);
-      this.embedUrl = "https://www.youtube.com/embed/9bZkp7q19f0?controls=0";
     });
   }
 
