@@ -8,6 +8,7 @@ import {RegisterComponent} from "./core/components/register/register.component";
 import {GameComponent} from "./core/components/game/game.component";
 import {ScoreComponent} from "./core/components/score/score.component";
 import {PlayersComponent} from "./core/components/players/players.component";
+import {QuizGuard} from "./core/components/guard/quiz.guard";
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'game',
+    canActivate: [QuizGuard],
     component: GameComponent
   },
   {
