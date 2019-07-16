@@ -15,6 +15,10 @@ export class LocalstorageService {
     this.subject.next(key);
   }
 
+  isAdminConnected() {
+    return localStorage.getItem('admin');
+  }
+
   remove(key: string) {
     localStorage.removeItem(key);
     this.subject.next(null);

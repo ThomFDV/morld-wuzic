@@ -7,12 +7,12 @@ import { LoginComponent } from './components/login/login.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
-  MatButtonModule,
-  MatCardModule,
-  MatDividerModule,
-  MatIconModule,
-  MatInputModule, MatRadioModule,
-  MatStepperModule
+    MatButtonModule,
+    MatCardModule,
+    MatDividerModule,
+    MatIconModule,
+    MatInputModule, MatRadioModule,
+    MatStepperModule, MatTooltipModule
 } from '@angular/material';
 import { RegisterComponent } from './components/register/register.component';
 import {GameComponent} from './components/game/game.component';
@@ -47,7 +47,8 @@ import { AddSongComponent } from './components/add-song/add-song.component';
     MatCardModule,
     MatDividerModule,
     MatStepperModule,
-    MatRadioModule
+    MatRadioModule,
+    MatTooltipModule
   ],
   providers: [
     TranslateService

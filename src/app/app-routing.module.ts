@@ -8,8 +8,9 @@ import {RegisterComponent} from "./core/components/register/register.component";
 import {GameComponent} from "./core/components/game/game.component";
 import {ScoreComponent} from "./core/components/score/score.component";
 import {PlayersComponent} from "./core/components/players/players.component";
-import {QuizGuard} from "./core/components/guard/quiz.guard";
+import {QuizGuard} from "./core/guard/quiz.guard";
 import {AddSongComponent} from "./core/components/add-song/add-song.component";
+import {QuizCreationGuard} from "./core/guard/quiz-creation.guard";
 
 const routes: Routes = [
   {
@@ -28,6 +29,7 @@ const routes: Routes = [
   },
   {
     path: 'game/add',
+    canActivate: [QuizCreationGuard],
     component: AddSongComponent
   },
   {

@@ -9,6 +9,10 @@
         </mat-card-title>
         <mat-card-content>
             <button mat-raised-button color="warn" routerLink="players">{{'HOME.BUTTON' | translate}}</button>
+            <hr>
+            <button mat-stroked-button color="accent"
+                    matTooltip="Vous devez vous identifier en tant qu'admin"
+                    routerLink="/game/add">Créer un quiz</button>
         </mat-card-content>
     </mat-card>
 </section>

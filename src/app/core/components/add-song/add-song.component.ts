@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {GameService} from "../../services/game/game.service";
+import {LocalstorageService} from "../../services/localstorage/localstorage.service";
 
 @Component({
   selector: 'app-add-song',
@@ -14,6 +15,7 @@ export class AddSongComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private gameService: GameService,
+              private localStorage: LocalstorageService,
               private router: Router) { }
 
   ngOnInit() {
@@ -38,5 +40,9 @@ export class AddSongComponent implements OnInit {
       alert("Bien enregisté !");
       this.router.navigateByUrl('/players');
     });
+  }
+
+  disconnect() {
+    this.localStorage.remove('admin');
   }
 }
