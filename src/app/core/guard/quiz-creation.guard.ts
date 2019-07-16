@@ -12,7 +12,6 @@ export class QuizCreationGuard implements CanActivate {
   canActivate() {
     let connected = this.localStorage.isAdminConnected();
     if (connected === 'true') {
-      console.log(this.localStorage.isAdminConnected());
       return true;
     }
     alert('Vous devez vous connecter d\'abord');

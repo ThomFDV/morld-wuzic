@@ -44,5 +44,6 @@ export class AddSongComponent implements OnInit {
 
   disconnect() {
     this.localStorage.remove('admin');
+    this.router.navigateByUrl('/players');
   }
 }
